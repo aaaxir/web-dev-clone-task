@@ -1,0 +1,288 @@
+/* Font declarations */
+@font-face {
+    font-family: 'Protest Guerrilla';
+    src: url('/path/to/fonts/ProtestGuerrilla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+}
+
+/* Base styles */
+body {
+    background-color: #e9e9e9;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, h2, .title1, .h1-1 {
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #000000;
+}
+
+h3, h4, h5, h6 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.title1 {
+    font-size: 80px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2, .h1-1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+}
+
+.h1-1 {
+    display: block;
+    text-align: left;
+}
+
+h6 {
+    width: 100%;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Header and navigation */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    padding-top: 30px;
+    max-width: 100px;
+    height: auto;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links li {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000000;
+}
+
+/* Content sections */
+.content-1 {
+    background-color: #ffffff;
+    margin: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: #3C0919 200px;
+}
+
+.subc-1 {
+    padding-left: 50px;
+    margin: 50px;
+}
+
+.content-grid {
+    column-count: 3;
+    margin-top: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 15px;
+}
+
+.content-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Album display */
+.f-album {
+    height: 500px;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+}
+
+.album-grid img {
+    height: 250px;
+    width: 204px;
+}
+
+/* Author section */
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    color: #000000;
+    font-size: 16px;
+    height: 300px;
+}
+
+.author p {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.author img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.author-text {
+    max-width: 60%;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Responsive design - Mobile */
+@media (max-width: 540px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-1 {
+        margin: 12px;
+        padding: 12px;
+    }
+
+    .author {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .author img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Responsive design - Small tablets */
+@media (min-width: 540px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .content-1 {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .content-grid {
+        column-count: 1;
+    }
+}
+
+/* Responsive design - Tablets */
+@media (min-width: 720px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .content-1 {
+        margin: 30px;
+        padding: 30px;
+    }
+
+    .content-grid {
+        column-count: 2;
+    }
+
+    .album-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet-specific style: Align author section to the left */
+@media (min-width: 540px) and (max-width: 1024px) {
+    h6 {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+
+/* Responsive design - Desktop */
+@media (min-width: 1024px) {
+    .logo img {
+        width: 200px;
+    }
+
+    .nav-links li {
+        margin: 0 20px;
+    }
+
+    .content-1 {
+        margin: 50px;
+        padding: 50px;
+    }
+
+    .title1 {
+        font-size: 80px;
+    }
+
+    .content-grid {
+        column-count: 3;
+    }
+
+    .f-album {
+        height: 500px;
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
