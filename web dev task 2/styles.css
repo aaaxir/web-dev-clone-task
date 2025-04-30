@@ -8,7 +8,7 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #FFFFFF;
-    background-color: #070410;
+    background-color: #231651;
 }
 
 /* Header Styling */
@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 16px;
-    background-color: #231651;
+    background-color: #070410;
     color: #FFFFFF;
     flex-wrap: wrap;
 }
@@ -56,7 +56,7 @@ header nav a {
 
 .movie {
     width: 48%;
-    background-color: #231651;
+    background-color: #070410;
     padding: 16px;
     border-radius: 8px;
     display: flex;
@@ -89,7 +89,7 @@ header nav a {
 /* Single Movie Card Layout */
 .single-movie {
     display: flex;
-    background-color: #231651;
+    background-color: #070410;
     padding: 16px;
     margin-top: 32px;
     border-radius: 8px;
@@ -145,7 +145,7 @@ header nav a {
 
     .featured-movie{
         display: flex;
-        background-color: #231651;
+        background-color: #070410;
         padding: 16px;
         margin-top: 32px;
         border-radius: 8px;
